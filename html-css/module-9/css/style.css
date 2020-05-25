@@ -1,0 +1,235 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+}
+.header-button{
+    /* width: 90px; */
+    height: 36px;
+    border-radius: 18px;
+    border: 2px solid rgba(26,25,21,0); 
+    background-color: rgba(26,25,21,0);
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    
+}
+.header-button:focus{
+    transition: 200ms;
+    border: 2px solid #ffffff; 
+}
+.header-h2{
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+}
+.header-h2-logo-link{
+    color: #ffffff;
+    text-decoration: none;
+}
+.header-h3{
+    font-size: 30px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+.header-p{
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 300;
+    text-align: center;
+}
+.header-p{
+    margin-bottom: 20px;
+}
+.header-button-abou{
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ff4e50;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+}
+.header{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+   width: 100%;
+   height:auto;
+}
+.header::after{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(26, 25, 21,.2);
+    z-index: 1;
+}
+.container{
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.section-h3{
+    font-size: 22px;
+    color: #333333;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+}
+.section-button{
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 2px solid #ff4e50;
+    font-size: 14px;
+    color: #ff4e50;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+}
+.section-div-for-img{
+    position: relative;
+    width: 120px;
+    height: auto;
+}
+.section-div-for-img::before{
+    position: absolute;
+    content: "";
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+}
+.section-div-for-img-first::before{
+    background-image: url(../img/homework-08tv.png);
+    background-color: #ff4e50;
+}
+.section-div-for-img-second::before{
+    background-image: url(../img/homework-08lock.png);
+    background-color: #ffa507;
+}
+.section-div-for-img-third::before{
+    background-image: url(../img/homework-08coffe.png);
+    background-color: #1cd7ad;
+}
+.section-div-for-img-fourth::before{
+    background-image: url(../img/homework-08fly.png);
+    background-color: #4e73db;
+}    
+.section-div-for-img-circle{
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.section-ul-li-h4{
+    font-size: 14px;
+    color: #333333;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;    
+}
+.section-ul-li-p{   
+    font-size: 14px;
+    color: #666666;
+    font-family: "Roboto";
+    font-weight: 300;
+    text-align: center;
+}
+.section-ul{
+    list-style-type: none;
+}
+@media (max-width: 767px){
+    .header{
+        background-image: url(../img/homework-08light-phone.png);
+        padding: 20px 5px  140px 5px;
+    }
+    .header-button{
+        margin-bottom: 120px;
+    }
+    .header-h2{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .header-h3{
+        margin-bottom: 20px;
+    }
+    .header-p{
+        margin-bottom: 20px;
+    }
+    .section{
+        padding: 74px 5px 56px 5px;
+    }
+    .section-h3-row{
+        margin-bottom: 16px;
+    }
+    .section-div-for-img{
+        margin: 0px auto 20px auto;
+    }
+    .section-ul-li-h4{
+        margin-bottom: 18px;
+    }
+    .section-ul-li{
+        margin-bottom: 28px;    
+    }
+
+}
+@media (min-width: 768px){
+    .header{
+        background-image: url(../img/homework-08_Tablet.png);
+        padding: 50px 5px  234px 5px;
+    }
+    .header-h3{
+        margin-bottom: 40px;
+    }
+    .header-p{
+        margin-bottom: 40px;
+    }
+    .section{
+        padding: 74px 5px 40px 5px;
+    }
+    .section-h3-row{
+        margin-bottom: 36px;
+    }
+    .section-div-for-img{
+        margin: 0px auto 22px auto;
+    }
+    .section-ul-li-h4{
+        margin-bottom: 22px;
+    }
+}
+@media (min-width: 768px) and (max-width:991px){
+    .section-ul-li-first , .section-ul-li-second{
+        margin-bottom: 58px;
+    }
+    .section-ul-li-third , .section-ul-li-fourth{
+        margin-bottom: 40px;
+    }
+}
+
+
+@media (min-width: 992px){
+    .section-ul-li{
+        margin-bottom: 40px;
+    }
+
+}
