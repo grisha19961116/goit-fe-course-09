@@ -1,4 +1,19 @@
-
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +22,6 @@ img{
     display: block;
 }
 .header-button{
-    /* width: 90px; */
     height: 36px;
     border-radius: 18px;
     border: 2px solid rgba(26,25,21,0); 
@@ -17,7 +31,6 @@ img{
     font-family: "Montserrat";
     font-weight: 700;
     text-align: center;
-    
 }
 .header-button:focus{
     transition: 200ms;
