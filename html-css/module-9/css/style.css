@@ -22,6 +22,7 @@ img{
     display: block;
 }
 .header-button{
+    max-width: 90px;
     height: 36px;
     border-radius: 18px;
     border: 2px solid rgba(26,25,21,0); 
@@ -47,7 +48,6 @@ img{
     text-decoration: none;
 }
 .header-h3{
-    font-size: 30px;
     color: #ffffff;
     font-family: "Montserrat";
     font-weight: 700;
@@ -174,7 +174,7 @@ img{
 @media (max-width: 767px){
     .header{
         background-image: url(../img/homework-08light-phone.png);
-        padding: 20px 5px  140px 5px;
+        padding: 20px 0px  140px 0px;
     }
     .header-button{
         margin-bottom: 120px;
@@ -184,11 +184,15 @@ img{
         text-align: center;
     }
     .header-h3{
+        font-size: 30px;
+        max-width: 340px;
         margin-bottom: 20px;
     }
     .header-p{
         margin-bottom: 20px;
     }
+    .header-button-abou{
+       max-width: 280px;}
     .section{
         padding: 74px 5px 56px 5px;
     }
@@ -204,6 +208,9 @@ img{
     .section-ul-li{
         margin-bottom: 28px;    
     }
+    .section-button{
+        max-width: 280px;
+    }
 
 }
 @media (min-width: 768px){
@@ -211,12 +218,19 @@ img{
         background-image: url(../img/homework-08_Tablet.png);
         padding: 50px 5px  234px 5px;
     }
+    .header-for-768px-and-more{
+        margin-bottom: 160px;
+    }
     .header-h3{
+        font-size: 52px;
+        max-width: 550px;
         margin-bottom: 40px;
     }
     .header-p{
         margin-bottom: 40px;
     }
+    .header-button-abou{
+      max-width: 230px;}
     .section{
         padding: 74px 5px 40px 5px;
     }
@@ -229,6 +243,9 @@ img{
     .section-ul-li-h4{
         margin-bottom: 22px;
     }
+    .section-button{
+        max-width: 200px;
+    }
 }
 @media (min-width: 768px) and (max-width:991px){
     .section-ul-li-first , .section-ul-li-second{
@@ -240,8 +257,13 @@ img{
 }
 
 @media (min-width: 992px){
+    .header{
+        background-image: url(../img/homework-08light-desctop.png);
+    }
     .section-ul-li{
         margin-bottom: 40px;
     }
-
-}
+    .section-button{
+        max-width: 180px;
+     }
+ }
